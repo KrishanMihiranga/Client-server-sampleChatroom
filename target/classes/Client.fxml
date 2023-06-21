@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="343.0" prefWidth="602.0" style="-fx-background-color: offwhite;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Client">
+   <children>
+      <JFXTextField fx:id="txtmessage" labelFloat="true" layoutX="26.0" layoutY="296.0" onAction="#txtMessageOnAction" prefHeight="25.0" prefWidth="457.0" promptText="your message" />
+      <JFXTextArea fx:id="txtArea" editable="false" focusColor="WHITE" layoutX="26.0" layoutY="25.0" prefHeight="241.0" prefWidth="549.0" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnSend" layoutX="493.0" layoutY="292.0" onAction="#btnSendOnAction" prefHeight="33.0" prefWidth="82.0" style="-fx-background-color: limegreen;" text="send" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
